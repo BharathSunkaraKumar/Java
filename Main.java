@@ -39,10 +39,92 @@
 //     String name;
 // }
 
-class Apple {
-    int price;
-    String model;
-    static String brand;
+// class Apple {
+//     int price;
+//     String model;
+//     static String brand;
+
+//     public void reaction() {
+//         System.out.println("this is non static");
+//     }
+
+//     static void action() {
+//         System.out.println("is static method");
+//     }
+
+//     static {
+//         System.out.println("this is static statement");
+//     }
+// }
+
+// class Human {
+//     private int age;
+//     private String name;
+
+// this keyword
+// public void setAge(int age) {
+// this.age = age;
+// }
+
+// public void setName(String name) {
+// this.name = name;
+// }
+
+// constructor
+// public Human() {
+// age = 26;
+// name = "bharath";
+// }
+
+// public Human(int age, String name) {
+// this.age = age;
+// this.name = name;
+// }
+
+// public int getAge() {
+// return age;
+// }
+
+// public String getName() {
+// return name;
+// }
+
+// }
+
+//this() and super()
+// class A {
+//     public A() {
+//         System.out.println("A default");
+//     }
+
+//     public A(int n) {
+//         System.out.println("A perameter");
+//     }
+// }
+
+// class B extends A {
+//     public B() {
+//         super(5);
+//         System.out.println("B default");
+//     }
+
+//     public B(int n) {
+//         this();
+//         System.out.println("B perameter");
+//     }
+// }
+
+//method overriding
+class Calc {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+class SuperCalc extends Calc {
+    public int add(int a, int b) {
+        return a + b + 5;
+    }
 }
 
 public class Main {
@@ -140,21 +222,40 @@ public class Main {
         // StringBuffer s1 = new StringBuffer();
         // System.out.println(s1.append("kumar"));
 
-        Apple obj1 = new Apple();
-        Apple obj2 = new Apple();
+        // Apple obj1 = new Apple();
+        // Apple obj2 = new Apple();
 
-        obj1.model = "16";
-        obj1.price = 50000;
-        Apple.brand = "iphone";
+        // obj1.model = "16";
+        // obj1.price = 50000;
+        // Apple.brand = "iphone";
 
-        obj2.model = "15";
-        obj2.price = 76000;
-        Apple.brand = "oneplus";
+        // obj2.model = "15";
+        // obj2.price = 76000;
+        // Apple.brand = "oneplus";
 
-        Apple.brand = "apple iphone";
+        // Apple.brand = "apple iphone";
 
-        System.out.println(Apple.brand + " " + obj1.model + " " + obj1.price);
-        System.out.println(Apple.brand + " " + obj2.model + " " + obj2.price);
+        // System.out.println(Apple.brand + " " + obj1.model + " " + obj1.price);
+        // System.out.println(Apple.brand + " " + obj2.model + " " + obj2.price);
+
+        // static
+
+        // obj1.reaction();
+        // Apple.action();
+
+        // Human obj = new Human();
+        // Human obj1 = new Human(25, "sbk");
+
+        // obj.setAge(25);
+        // obj.setName("sbk");
+        // System.out.println(obj.getName() + " " + obj.getAge());
+        // System.out.println(obj1.getName() + " " + obj1.getAge());
+
+        // B obj = new B(3);
+
+        SuperCalc obj = new SuperCalc();
+        int result = obj.add(5, 10);
+        System.out.println(result);
 
     }
 }
