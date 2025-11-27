@@ -1,5 +1,5 @@
 
-class Demo {
+class Demo implements arrayOfObject {
     public static void main(String arg[]) {
         int nums[] = { 1, 2, 3, };
         int arr[] = new int[4]; // dynamic

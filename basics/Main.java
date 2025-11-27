@@ -1,4 +1,6 @@
+package basics;
 // class Mobile {
+
 //     // attributes(properties or variabels or instancevariables)
 //     int price = 25000;
 //     String model = "K20pro";
