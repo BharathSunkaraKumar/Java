@@ -12,19 +12,22 @@ class Demo {
         // char vowels[] = { 'e', 'u', 'a', 'o', 'i' };
         // Arrays.sort(vowels, startIndex, endIndex);
         // Arrays.sort(vowels);
-        int startIndex = 1;
-        int endIndex = 4;
+        // int startIndex = 1;
+        // int endIndex = 4;
         // char key = 'i';
         // int foundIndex = Arrays.binarySearch(vowels, startIndex, endIndex, key);
         // System.out.println(foundIndex);
         // Arrays.fill(vowels, startIndex, endIndex, 'x');
         // System.out.println(Arrays.toString(vowels));
 
-        int numbers[] = { 1, 2, 3, 4, 5 };
+        // int numbers[] = { 1, 2, 3, 4, 5 };
         // int numbers1[] = Arrays.copyOf(numbers, numbers.length);
-        int numbers1[] = Arrays.copyOfRange(numbers, startIndex, endIndex);
-        Arrays.fill(numbers, 0);
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(Arrays.toString(numbers1));
+        // int numbers1[] = Arrays.copyOfRange(numbers, startIndex, endIndex);
+        // Arrays.fill(numbers, 0);
+        // System.out.println(Arrays.toString(numbers));
+        // System.out.println(Arrays.toString(numbers1));
+        String[] stu = new String[3];
+
+        System.out.println(stu);
     }
 }
