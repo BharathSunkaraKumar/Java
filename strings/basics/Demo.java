@@ -32,5 +32,7 @@ class Demo {
         // System.out.println(str);
         // String str1 = str.replace("blue", "red"); // replace
         // System.out.println(str.contains("red")); //conatinas
+        // System.out.println(str.substring(2));
+        System.out.println(str.substring(3, 7));
     }
 }
