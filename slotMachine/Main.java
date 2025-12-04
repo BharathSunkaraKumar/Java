@@ -9,6 +9,7 @@ public class Main {
         int payOut;
         String[] row;
         Scanner scanner = new Scanner(System.in);
+        String plainAgin;
 
         System.out.println("*******Welcome to the java slots*******");
         System.out.println("🍉watermelon, 🔔bell, ⭐star, 🍒cherry, 🍋lemon");
@@ -17,6 +18,7 @@ public class Main {
         while (balance > 0) {
             System.out.print("place your bet: ");
             bet = scanner.nextInt();
+            scanner.nextLine();
 
             if (bet > balance) {
                 System.out.println("insufficient balance :-(");
@@ -40,8 +42,15 @@ public class Main {
                 System.out.println("sorry you lost this round");
             }
             System.out.println("balance: " + balance);
+            System.out.print("Do you want to play again? (Y/N): ");
+            plainAgin = scanner.nextLine().toUpperCase();
+
+            if (!plainAgin.equals("Y")) {
+                break;
+            }
 
         }
+        System.out.println("GAME OVER! Your final balance is " + balance);
         scanner.close();
     }
 
